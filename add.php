@@ -63,7 +63,7 @@ if(isset($_POST['Submit'])) {
 		// if all the fields are filled (not empty) 
 			
 		//insert data to database	
-		$result = mysqli_query($mysqli, "INSERT INTO products(nombre, apellido, telefono, idempleado, domicilio, correo, fecha, sangre, login_id) VALUES('$nombre','$apellido','$telefono', '$idempleado','$domicilio','$correo','$fecha','$sangre', '$loginId')");
+		$result = mysqli_query($mysqli, "INSERT INTO empleado(nombre, apellido, telefono, idempleado, domicilio, correo, fecha, sangre, login_id) VALUES('$nombre','$apellido','$telefono', '$idempleado','$domicilio','$correo','$fecha','$sangre', '$loginId')");
 		
 		//display success message
 		echo "<font color='green'>Datos agregados correctamente.";
